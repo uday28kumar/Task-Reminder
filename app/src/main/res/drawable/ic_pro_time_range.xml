@@ -1,0 +1,20 @@
+<vector android:height="40dp" android:viewportHeight="64.0"
+    android:viewportWidth="64.0" android:width="40dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#80C4D6" android:pathData="M32,0c17.7,0 32,14.3 32,32S49.7,64 32,64S0,49.7 0,32S14.3,0 32,0z"/>
+    <path android:fillColor="#777793" android:pathData="M20,47l-1.3,4.6c-0.2,0.9 0.7,1.6 1.5,1.1L25,50"/>
+    <path android:fillColor="#777793" android:pathData="M44,47l1.3,4.6c0.2,0.9 -0.7,1.6 -1.5,1.1L39,50"/>
+    <path android:fillColor="#514F6D" android:pathData="M32,14c10.5,0 19,8.5 19,19s-8.5,19 -19,19s-19,-8.5 -19,-19S21.5,14 32,14z"/>
+    <path android:fillColor="#F9F7E4" android:pathData="M32,18c8.3,0 15,6.7 15,15s-6.7,15 -15,15s-15,-6.7 -15,-15S23.7,18 32,18z"/>
+    <path android:fillColor="#FCDA4F" android:pathData="M22,14.1L12.1,24c-2.7,-2.7 -2.7,-7.2 0,-9.9S19.3,11.3 22,14.1z"/>
+    <path android:fillColor="#FCDA4F" android:pathData="M42,14.1l9.9,9.9c2.7,-2.7 2.7,-7.2 0,-9.9C49.2,11.3 44.7,11.3 42,14.1z"/>
+    <path android:fillColor="#BEBECC" android:pathData="M31.5,19h1v3h-1z"/>
+    <path android:fillColor="#BEBECC" android:pathData="M31.5,44h1v3h-1z"/>
+    <path android:fillColor="#BEBECC" android:pathData="M41.49,22.75l0.71,0.71l-2.12,2.12l-0.71,-0.71z"/>
+    <path android:fillColor="#BEBECC" android:pathData="M23.92,40.42l0.71,0.71l-2.12,2.12l-0.71,-0.71z"/>
+    <path android:fillColor="#BEBECC" android:pathData="M43,32.5h3v1h-3z"/>
+    <path android:fillColor="#BEBECC" android:pathData="M18,32.5h3v1h-3z"/>
+    <path android:fillColor="#BEBECC" android:pathData="M42.31,42.55l-0.71,0.71l-2.12,-2.12l0.71,-0.71z"/>
+    <path android:fillColor="#BEBECC" android:pathData="M24.52,24.87l-0.71,0.71l-2.12,-2.12l0.71,-0.71z"/>
+    <path android:fillColor="#514F6D" android:pathData="M38,34h-6c-0.6,0 -1,-0.4 -1,-1v-8c0,-0.6 0.4,-1 1,-1h0c0.6,0 1,0.4 1,1v6c0,0.6 0.4,1 1,1h4c0.6,0 1,0.4 1,1l0,0C39,33.6 38.6,34 38,34z"/>
+    <path android:fillColor="#FCDA4F" android:pathData="M32,33m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+</vector>

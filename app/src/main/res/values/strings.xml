@@ -1,0 +1,236 @@
+<resources>
+
+    <!--App level string constants-->
+    <string name="app_name" translatable="false">Location Task Remainder</string>
+    <string name="app_version" translatable="false">v4.0.3</string>
+
+
+    <!--Activity titles-->
+    <string name="title_home_screen">Tasks Nearby</string>
+    <string name="title_add_new_task">Add Task</string>
+    <string name="title_edit_task">Edit Task</string>
+    <string name="title_task_detail">Task Details</string>
+    <string name="title_saved_places">Saved Places</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_about">About</string>
+
+
+    <!--Units, time, formats-->
+    <string name="unit_metres">m</string>
+    <string name="unit_yards">yd</string>
+    <string name="reminder">Reminder</string>
+    <string name="time_format_am">AM</string>
+    <string name="time_format_pm">PM</string>
+    <!--Distance formats-->
+    <string name="distance_format_m">%d m</string>
+    <string name="distance_format_km">%.2f km</string>
+    <string name="distance_format_yd">%d yd</string>
+    <string name="distance_format_mi">%.2f mi</string>
+    <string name="msg_notif_foreground_service">Location reminders are on.</string>
+
+
+    <!--#### HomeScreen constants ####-->
+    <string name="main_msg_no_tasks">You don\'t have any tasks. Click the + button to add new Tasks.</string>
+    <!--NavDrawer constants-->
+    <string name="nav_header_tagline">Simple location reminders, Just for you.</string>
+    <string name="nav_title_all_tasks">All Tasks</string>
+    <string name="nav_title_settings">Settings</string>
+    <string name="nav_title_about">About</string>
+    <string name="nav_title_rate_us">Rate us</string>
+    <string name="nav_title_send_feedback">Send Feedback</string>
+    <string name="nav_title_premium">Premium</string>
+    <string name="nav_title_unlock_premium">Unlock Premium</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <!--Permissions Dialog-->
+    <string name="dialog_permission_title">Permissions Denied</string>
+    <string name="dialog_permission_message">Location permission is necessary for this app to work, please grant this permission.</string>
+    <string name="dialog_grant_permission_button">Grant Permissions</string>
+    <string name="error_fix_location_settings">Location settings are inadequate, and cannot be fixed here. Fix in Settings.</string>
+    <!-- NOTE: Make sure that these are in the same order as the value of the constants
+        that are defined for these. i.e. Snoozed, Active, Upcoming, Expired, Done -->
+    <string-array name="task_states">
+        <item>@string/task_state_snoozed</item>
+        <item>@string/task_state_active</item>
+        <item>@string/task_state_upcoming</item>
+        <item>@string/task_state_expired</item>
+        <item>@string/task_state_done</item>
+        <item>@string/task_state_invalid</item>
+    </string-array>
+    <string name="task_state_snoozed">Snoozed</string>
+    <string name="task_state_active">Active</string>
+    <string name="task_state_upcoming">Upcoming</string>
+    <string name="task_state_expired">Expired</string>
+    <string name="task_state_done">Done</string>
+    <string name="task_state_invalid">Invalid</string>
+
+
+    <!--#### Task Creator screen constants ####-->
+    <string name="creator_task_name_hint">Remind me about</string>
+    <string name="creator_location_title">Select Location</string>
+    <string name="creator_saved_place_button">Saved Places</string>
+    <string name="creator_or_string">OR</string>
+    <string name="creator_pick_place_button">Pick a Place</string>
+    <string name="creator_location_name_hint">Location Name</string>
+    <string name="creator_reminder_range">Reminder range :</string>
+    <string name="creator_reminder_range_default" translatable="false">75</string>
+    <string name="creator_alarm_title">Ring Alarm</string>
+    <string name="creator_note_hint">Add a note</string>
+    <string name="creator_time_title">Anytime</string>
+    <string name="creator_time_start_title">From</string>
+    <string name="creator_time_start_default" translatable="false">00:00 AM</string>
+    <string name="creator_time_end_title">To</string>
+    <string name="creator_time_end_default" translatable="false">11:59 PM</string>
+    <string name="creator_date_title">Date Interval</string>
+    <string name="creator_date_start_title">Starts From</string>
+    <string name="creator_date_start_default">Today</string>
+    <string name="creator_date_end_title">Expires on</string>
+    <string name="creator_date_end_default">No Deadline</string>
+    <string name="creator_menu_action_save">SAVE</string>
+    <!--Error messages for creator-->
+    <string name="creator_error_empty_taskname">Please enter a Task Name.</string>
+    <string name="creator_error_empty_location">Please pickup a location where you need to be reminded.</string>
+    <string name="creator_error_image_permission">Permission is required for adding image.</string>
+    <string name="creator_error_empty_range">Please enter a reminder range around your chosen location.</string>
+    <string name="creator_error_no_weekday">Please select the days for reminder to repeat on.</string>
+    <string name="creator_already_in_range">You are already within the selected range.</string>
+    <string name="creator_no_internet_error">Place picker requires active internet connection.</string>
+    <string name="creator_action_upgrade_to_premium">upgrade to premium</string>
+    <string name="creator_msg_image_selection_failed">Image selection failed</string>
+    <!--Not using these as of now-->
+    <string name="detail_does_not_repeat">Does not repeat.</string>
+    <string name="creator_repeat_dialog_title">Choose a repeat interval</string>
+    <string-array name="creator_repeat_options">
+        <item>Does not repeat</item>
+        <item>Repeats daily</item>
+        <item>Repeats weekly</item>
+        <item>Repeats monthly</item>
+    </string-array>
+
+
+    <!-- #### Detail activity ####-->
+    <string name="detail_alarm_format">Alarm is %s</string>
+    <string name="detail_alarm_on">on</string>
+    <string name="detail_alarm_off">off</string>
+    <string name="detail_time_format">%s to %s</string>
+    <string name="detail_time_anytime">Anytime during the day</string>
+    <string name="detail_date_format">%1$s  -  %2$s</string>
+    <string name="detail_date_no_deadline">No deadline</string>
+    <string name="detail_date_today">Today</string>
+    <string name="detail_format_reminder_range">Within %s</string>
+    <string name="detail_button_mark_done">Mark Done</string>
+    <string name="detail_button_reset">Reset</string>
+    <string name="detail_menu_item_delete">Delete</string>
+    <string name="detail_menu_item_edit">Edit</string>
+    <string name="detail_delete_dialog_message">Delete this reminder?</string>
+    <string name="detail_msg_expired_cant_reset">This task has expired. You can edit the dates.</string>
+    <string name="detail_msg_task_resetted">Task has been reset.</string>
+    <string name="detail_msg_task_marked_done">Task has been marked done.</string>
+    <string name="error_no_app">No supporting application found.</string>
+    <!-- Dialog box actions -->
+    <string name="dialog_action_delete">Delete</string>
+    <string name="dialog_cancel">Cancel</string>
+
+
+    <!--#### Saved places activity ####-->
+    <string name="saved_places_msg_empty">You\'ve not saved any places.\nClick this button to pick a place from map.</string>
+    <string name="saved_places_dialog_msg_delete_place">Delete saved location \"%s\"?</string>
+
+
+    <!--#### Alarm Activity constants ####-->
+    <string name="alarm_action_set_as_notification"><u>Set as Notification only</u></string>
+    <string name="alarm_show_map">Show Map</string>
+    <string name="alarm_show_image">Show Image</string>
+    <string name="error_tts">Please check text to speech settings of your device.</string>
+    <string name="action_mark_done">Mark Done</string>
+    <string name="action_snooze">Snooze</string>
+    <string name="alarm_action_show_map">Show Map</string>
+
+
+    <!--#### About activity ####-->
+    <string name="about_developer_name_yash" translatable="false">Yash Verma</string>
+    <string name="about_name_developer_name_shilpi" translatable="false">Shilpi Gupta</string>
+    <!-- Feedback -->
+    <string name="email_subject" translatable="false">Task Nearby App</string>
+    <string-array name="email_ids">
+        <item>verma.yash8@gmail.com</item>
+        <item>shilpi.c75@gmail.com</item>
+    </string-array>
+    <!-- Urls -->
+    <string name="play_store_base_url" translatable="false">https://play.google.com/store/apps/details?id=</string>
+    <string name="rating_base_url" translatable="false">"market://details?id="</string>
+    <!-- Share app -->
+    <string name="share_message">Hey! Try out the Task Nearby app. This is an awesome app for location
+        based reminders. Download it from Google Play Store! Visit: %s</string>
+    <string name="action_share">Share</string>
+    <string name="feedback_text"><u>Help us improve?</u></string>
+
+    <!--#### Upgrade activity ####-->
+    <string name="upgrade_feature_images">Add Images</string>
+    <string name="upgrade_feature_notes">Add Notes</string>
+    <string name="upgrade_feature_time">Set Time Intervals</string>
+    <string name="upgrade_feature_date">Set Date Intervals</string>
+    <string name="upgrade_feature_snooze">Custom Snooze Times</string>
+    <string name="upgrade_feature_voice">Voice alerts</string>
+    <string name="upgrade_feature_repeat">Daily/Weekly Repeatable alarms</string>
+    <string name="upgrade_feature_route">Generate Route (Coming Soon)</string>
+    <string-array name="upgrade_premium_items">
+        <item>@string/upgrade_feature_images</item>
+        <item>@string/upgrade_feature_notes</item>
+        <item>@string/upgrade_feature_time</item>
+        <item>@string/upgrade_feature_date</item>
+        <item>@string/upgrade_feature_snooze</item>
+        <item>@string/upgrade_feature_voice</item>
+        <item>@string/upgrade_feature_repeat</item>
+        <item>@string/upgrade_feature_route</item>
+    </string-array>
+    <string name="upgrade_action_purchase">Purchase</string>
+    <string name="msg_thanks_for_buying">Thanks for buying!</string>
+    <string name="flavor_name_premium">PREMIUM</string>
+
+
+    <!-- #### Onboarding string resources #### -->
+    <string name="onboarding_skip">SKIP</string>
+    <string name="onboarding_got_it">GOT IT</string>
+    <string name="onboarding_next">NEXT</string>
+    <string-array name="onboarding_titles">
+        <item>@string/app_name</item>
+        <item>@string/onboarding_title_pa</item>
+        <item>@string/onboarding_title_productive</item>
+    </string-array>
+    <string name="onboarding_title_pa">Personal Assistant</string>
+    <string name="onboarding_title_productive">Be productive</string>
+    <string-array name="onboarding_descriptions">
+        <item>@string/onboarding_descriptions_1</item>
+        <item>@string/onboarding_descriptions_2</item>
+        <item>@string/onboarding_descriptions_3</item>
+    </string-array>
+    <string name="onboarding_descriptions_1">Tailor-made location reminders for you.</string>
+    <string name="onboarding_descriptions_2">Auto-magically takes care of everything: reminder distance, alarm timings and much more.</string>
+    <string name="onboarding_descriptions_3">No more forgetting of tasks you had to do on your way. Be tension free and enjoy.</string>
+
+    <!--Settings Screen -->
+    <string name="preference_category_general">General</string>
+    <string name="preference_category_alarms">Alarms</string>
+
+
+    <!-- These are to be added in other language -->
+    <!--Added in task creator -->
+    <string name="title_attachment">Attachment</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="creator_action_save">Save</string>
+    <string name="creator_select_image">Select image</string>
+    <string name="creator_repeat_title">Repeat</string>
+
+    <string name="error_range_zero">Please select reminder range greater than zero.</string>
+    <string name="error_range_max">Please select reminder range less than 50,000.</string>
+    <string name="error_range_empty">Please enter a valid reminder range.</string>
+
+    <string name="app_enabled">Task Nearby has been turned on.</string>
+    <string name="app_disabled">Task Nearby has been turned off.</string>
+    <string name="feature_upgrade_to_premium">Please upgrade to access this feature.</string>
+
+    <string name="about_privacy_policy_title"><u>Privacy Policy</u></string>
+    <string name="privacy_policy_url">https://sites.google.com/view/tasknearby/privacypolicy</string>
+</resources>

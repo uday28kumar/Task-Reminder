@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_tasks"
+            android:icon="@drawable/ic_list_grey_700_24dp"
+            android:checked="true"
+            android:title="@string/nav_title_all_tasks" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings_grey_700_24dp"
+            android:title="@string/nav_title_settings"
+            android:checkable="false"/>
+    </group>
+
+    <item android:title="@string/nav_title_about"
+        android:checkable="false">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_rate_review_grey_700_24dp"
+                android:title="@string/nav_title_rate_us"
+                android:checkable="false"/>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_feedback_grey_700_24dp"
+                android:title="@string/nav_title_send_feedback"
+                android:checkable="false"/>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_info_grey_700_24dp"
+                android:title="@string/nav_title_about"
+                android:checkable="false"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_title_premium"
+        android:id="@+id/nav_group_premium">
+        <menu>
+            <item
+                android:id="@+id/premium"
+                android:checkable="false"
+                android:icon="@drawable/ic_menu_satisfied_blue_a200_24dp"
+                android:title="@string/nav_title_unlock_premium" />
+        </menu>
+    </item>
+</menu>
+

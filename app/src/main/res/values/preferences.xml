@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Preferences -->
+    <!-- Unit-->
+    <string name="pref_unit_key" translatable="false">units</string>
+    <string name="pref_unit_title">Units</string>
+    <string-array name="pref_unit_values">
+        <item>Metric(m)</item>
+        <item>Imperial(yd)</item>
+    </string-array>
+    <string-array name="pref_units_entries">
+        <item>@string/pref_unit_entry_metric</item>
+        <item>@string/pref_unit_entry_imperial</item>
+    </string-array>
+    <string name="pref_unit_entry_metric">Metric (m/km)</string>
+    <string name="pref_unit_entry_imperial">Imperial (yd/mile)</string>
+    <string name="pref_unit_metric" translatable="false">Metric(m)</string>
+    <string name="pref_unit_imperial" translatable="false">Imperial(yd)</string>
+    <string name="pref_unit_default" translatable="false">Metric(m)</string>
+
+    <!--Distance Range -->
+    <string name="pref_distance_range_key" translatable="false">distance_range</string>
+    <string name="pref_distance_range_title">Default Reminder range</string>
+    <string name="pref_distance_range_default" translatable="false">75</string>
+
+    <!-- Alarm Tone -->
+    <string name="pref_alarm_tone_key" translatable="false">alarm_tone</string>
+    <string name="pref_alarm_tone_title">Alarm Tone</string>
+
+    <!-- Vibration -->
+    <string name="pref_vibrate_key" translatable="false">vibrate_alarm</string>
+    <string name="pref_vibrate_title">Vibration</string>
+    <string-array name="pref_vibrate_values">
+        <item>100</item>
+        <item>5</item>
+        <item>3</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="pref_vibrate_entries">
+        <item>@string/pref_vibrate_entry_forever</item>
+        <item>@string/pref_vibrate_entry_5_sec</item>
+        <item>@string/pref_vibrate_entry_3_sec</item>
+        <item>@string/pref_vibrate_entry_never</item>
+    </string-array>
+    <string name="pref_vibrate_entry_forever">Until alarm is dismissed.</string>
+    <string name="pref_vibrate_entry_5_sec">5 seconds.</string>
+    <string name="pref_vibrate_entry_3_sec">3 seconds.</string>
+    <string name="pref_vibrate_entry_never">Don\'t vibrate.</string>
+    <string name="pref_vibrate_default" translatable="false">100</string>
+
+    <!-- Voice Alarm -->
+    <string name="pref_voice_alarm_key" translatable="false">voice_alarm</string>
+    <string name="pref_voice_alarm_title">Voice alerts</string>
+    <string name="pref_voice_alarm_summary">App announcing the task details.</string>
+
+    <!-- Snooze Time -->
+    <string name="pref_snooze_time_key" translatable="false">snooze_time</string>
+    <string name="pref_snooze_title">Snooze time</string>
+    <string-array name="pref_snooze_time_entries">
+        <item>@string/pref_snooze_entry_1min</item>
+        <item>@string/pref_snooze_entry_3min</item>
+        <item>@string/pref_snooze_entry_5min</item>
+        <item>@string/pref_snooze_entry_10min</item>
+        <item>@string/pref_snooze_entry_20min</item>
+    </string-array>
+    <string name="pref_snooze_entry_1min">1 minute.</string>
+    <string name="pref_snooze_entry_3min">3 minutes.</string>
+    <string name="pref_snooze_entry_5min">5 minutes.</string>
+    <string name="pref_snooze_entry_10min">10 minutes.</string>
+    <string name="pref_snooze_entry_20min">20 minutes.</string>
+    <string-array name="pref_snooze_time_values">
+        <item>60000</item>
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1200000</item>
+    </string-array>
+    <string name="pref_snooze_time_default" translatable="false">180000</string>
+
+    <!-- Power Saver Mode -->
+    <string name="pref_power_saver_key" translatable="false">power_saver</string>
+    <string name="pref_power_saver_title">Power saver mode</string>
+    <string name="pref_power_saver_summary">Uses cellular network for reduced battery consumption.
+        Turning this on might lower the accuracy.</string>
+
+    <!-- App Enable (Same as previous) -->
+    <string name="pref_status_key" translatable="false">status</string>
+    <string name="pref_status_default" translatable="false">enabled</string>
+    <string-array name="pref_status_values">
+        <item>Enabled</item>
+        <item>Disabled(No Reminders)</item>
+    </string-array>
+    <string name="pref_status_enabled" translatable="false">enabled</string>
+    <string name="pref_status_disabled" translatable="false">disabled</string>
+
+    <!-- Accuracy settings used in previous verion -->
+    <string name="pref_accuracy_key" translatable="false">accuracy_pref</string>
+    <string name="pref_accuracy_default" translatable="false">high</string>
+    <string name="pref_accuracy_balanced" translatable="false">balanced</string>
+    <string name="pref_accuracy_high" translatable="false">high</string>
+
+    <!-- Preference for user upgraded to premium or not. -->
+    <string name="pref_is_premium_user_key" translatable="false">isPremiumUser</string>
+    <string name="pref_upgrade_order_id" translatable="false">order_id</string>
+    <string name="pref_upgrade_purchase_token" translatable="false">purchase_token</string>
+
+    <!-- Preference for version -->
+    <string name="pref_version_key" translatable="false">app_version</string>
+
+    <!-- Onboarding shared preference key. -->
+    <string name="pref_has_user_seen_onboarding" translatable="false">hasUserSeenOnboarding</string>
+
+</resources>

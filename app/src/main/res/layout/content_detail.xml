@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.tasknearby.yashcreations.com.tasknearby.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_ver_72dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="72dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_vertical_16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_ver_end_16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <TextView
+            android:id="@+id/text_location_name"
+            style="@style/itemStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Hyatt Residence, New Delhi 110042"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+            app:layout_constraintEnd_toStartOf="@+id/guide_ver_end_16dp"
+            app:layout_constraintStart_toStartOf="@+id/guide_ver_72dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_reminder_range" />
+
+        <TextView
+            android:id="@+id/text_note"
+            style="@style/itemStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Check flowers, music and catering too for the reception party."
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:layout_constraintEnd_toStartOf="@+id/guide_ver_end_16dp"
+            app:layout_constraintStart_toStartOf="@+id/guide_ver_72dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_repeat" />
+            <!--android:text=""-->
+
+        <TextView
+            android:id="@+id/text_repeat"
+            style="@style/itemStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Every day"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:layout_constraintEnd_toStartOf="@+id/guide_ver_end_16dp"
+            app:layout_constraintStart_toStartOf="@+id/guide_ver_72dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_alarm" />
+
+        <TextView
+            android:id="@+id/text_date_interval"
+            style="@style/itemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Fri, 12 Dec 17  to  Forever"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:layout_constraintStart_toStartOf="@+id/guide_ver_72dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_time_range" />
+
+        <TextView
+            android:id="@+id/text_time_range"
+            style="@style/itemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="01:00 PM to 04:00 PM"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:layout_constraintStart_toStartOf="@+id/guide_ver_72dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_location_name" />
+
+        <TextView
+            android:id="@+id/text_alarm"
+            style="@style/itemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Alarm is on"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:layout_constraintStart_toStartOf="@+id/guide_ver_72dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_date_interval" />
+
+        <TextView
+            android:id="@+id/text_reminder_range"
+            style="@style/itemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Within 50 metres of"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintStart_toStartOf="@+id/guide_ver_72dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_task_name" />
+
+        <ImageView
+            android:id="@+id/icon_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_16dp"
+            app:layout_constraintTop_toTopOf="@+id/text_reminder_range"
+            app:srcCompat="@drawable/ic_round_location_24" />
+
+        <ImageView
+            android:id="@+id/icon_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_16dp"
+            app:layout_constraintTop_toTopOf="@+id/text_alarm"
+            app:srcCompat="@drawable/ic_round_alarm_24px" />
+
+        <ImageView
+            android:id="@+id/icon_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_16dp"
+            app:layout_constraintTop_toTopOf="@+id/text_time_range"
+            app:srcCompat="@drawable/ic_round_access_time_24px" />
+
+        <ImageView
+            android:id="@+id/icon_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_16dp"
+            app:layout_constraintTop_toTopOf="@+id/text_repeat"
+            app:srcCompat="@drawable/ic_round_repeat_24px" />
+
+        <ImageView
+            android:id="@+id/icon_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_16dp"
+            app:layout_constraintTop_toTopOf="@+id/text_note"
+            app:srcCompat="@drawable/ic_round_note_add_24px" />
+
+        <TextView
+            android:id="@+id/text_task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="get abc from xyz"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_16dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_task_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Expired"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:layout_constraintStart_toStartOf="@+id/guide_ver_72dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_note" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_16dp"
+            app:layout_constraintTop_toTopOf="@+id/text_task_state"
+            app:srcCompat="@drawable/ic_info_outline_grey_24dp" />
+
+ </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

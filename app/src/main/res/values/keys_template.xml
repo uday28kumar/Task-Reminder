@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    Create another file in the values directory with this template. Replace the API Keys as
+    mentioned. Please make sure that:
+        1. That file containing the secrets is named "keys.xml". (it has been added in .gitignore)
+        2. It is not being added to git's index or being committed.
+
+    This is the dummy file that will be committed to convey the contents (template).
+
+    This is the API key that is used to access the Google Places API.
+    <string name="places_api_key">INSERT API KEY HERE</string>
+
+    <string-array name="modified_google_play_public_key_parts">
+        <item>PART 1</item>
+        <item>PART 1</item>
+        <item>PART 1</item>
+        <item>PART 1</item>
+    </string-array>
+-->
+</resources>
